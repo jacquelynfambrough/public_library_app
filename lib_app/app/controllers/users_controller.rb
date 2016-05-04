@@ -15,6 +15,8 @@ class UsersController < ApplicationController
     redirect_to @user
   end
 
+  before_action :logged_in?, only: [:show]
+
   def show
     @user = User.find_by_id(params[:id])
     render :show
