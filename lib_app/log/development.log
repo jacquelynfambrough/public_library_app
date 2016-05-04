@@ -3484,3 +3484,10 @@ Processing by UsersController#show as HTML
   Rendered users/show.html.erb within layouts/application (0.5ms)
   [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
 Completed 200 OK in 36ms (Views: 33.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/libraries/new" for ::1 at 2016-05-04 11:13:58 -0700
+Processing by LibrariesController#new as HTML
+  Rendered libraries/new.html.erb within layouts/application (8.4ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 91ms (Views: 68.4ms | ActiveRecord: 6.0ms)
