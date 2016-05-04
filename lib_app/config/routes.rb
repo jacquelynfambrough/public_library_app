@@ -23,4 +23,6 @@ Rails.application.routes.draw do
 
   get "libraries/:id", to: "libraries#show", as: "library"
 
+  get "/users/:user_id/libraries", to: "library_users#index", as: "user_libraries"
+
 end
