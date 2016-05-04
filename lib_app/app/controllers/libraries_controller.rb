@@ -4,4 +4,10 @@ class LibrariesController < ApplicationController
 
     render :index
   end
+
+  def new
+    @library = Library.new
+
+    render :new
+  end
 end
