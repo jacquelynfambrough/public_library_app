@@ -5,4 +5,11 @@ class LibraryUsersController < ApplicationController
 
     render :index
   end
+
+  def create
+    @library = Library.find(params[:library_id])
+    @library.users.push(current_user)
+
+    redirect_to current_user
+  end
 end
