@@ -14,7 +14,7 @@ class LibrariesController < ApplicationController
   def create
     @library = Library.create(library_params)
 
-    redirect_to libraries_path
+    redirect_to @library
   end
 
   def show
